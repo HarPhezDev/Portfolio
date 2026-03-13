@@ -29,7 +29,7 @@ const Project = () => {
             id: 3,
             title: "AI Chat Interface",
             desc: "Custom GPT-4 implementation with markdown support.",
-            image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop",
+            image: Project2,
             tags: ["Next.js", "OpenAI", "TypeScript"],
             github: "https://github.com/yourusername/project3",
             live: "https://project3-demo.com"
