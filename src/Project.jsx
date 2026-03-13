@@ -20,7 +20,7 @@ const Project = () => {
             id: 2,
             title: "Easy Currency Converter",
             desc: "A modern currency conversion app with real-time exchange rates, interactive Real API, and a responsive design powered by React and Tailwind CSS.",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
+            image: Project2,
             tags: ["React", "Tailwind", "API", "Framer Motion"],
             github: "https://github.com/HarPhezDev/Easy-Currency-Converter",
             live: "https://easycurrencyconverter0.netlify.app/"
@@ -29,7 +29,7 @@ const Project = () => {
             id: 3,
             title: "AI Chat Interface",
             desc: "Custom GPT-4 implementation with markdown support.",
-            image: Project2,
+            image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop",
             tags: ["Next.js", "OpenAI", "TypeScript"],
             github: "https://github.com/yourusername/project3",
             live: "https://project3-demo.com"
