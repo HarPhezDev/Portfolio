@@ -20,9 +20,25 @@ const Services = () => {
             icon: <FiLayers className="text-blue-500" size={28} />,
         },
         {
-            title: "React Native Mobile App Creation",
-            desc: "Building cross-platform mobile applications for iOS and Android with a single codebase and native performance.",
-            icon: <FiSmartphone className="text-blue-500" size={28} />,
+            title: "Testing",
+            desc: "Conducting thorough testing of websites to ensure functionality, performance, and user experience are flawless across browsers and devices.",
+            icon: <FiMonitor className="text-blue-500" size={28} />,
+        }, {
+            title: "API Integration",
+            desc: "Connecting websites and applications to external APIs for real-time data, services, and seamless functionality.",
+            icon: <FiLink className="text-blue-500" size={28} />,
+        },
+
+        {
+            title: "Maintenance & Updates",
+            desc: "Regularly updating websites, fixing bugs, and ensuring optimal performance and security over time.",
+            icon: <FiRefreshCcw className="text-blue-500" size={28} />,
+        },
+
+        {
+            title: "Accessibility",
+            desc: "Ensuring websites are usable by everyone, including people with disabilities, following best practices and standards.",
+            icon: <FiUserCheck className="text-blue-500" size={28} />,
         }
     ];
 
@@ -44,8 +60,8 @@ const Services = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {services.map((service, index) => (
                     <motion.div
-                        // FIXED: Added a more descriptive key
-                        key={`${service.title}-${index}`} 
+                     
+                        key={`${service.title}-${index}`}
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}

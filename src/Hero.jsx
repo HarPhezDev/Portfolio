@@ -50,7 +50,6 @@ const Hero = () => {
                     />
                 </motion.div>
 
-                {/* Text Content Section */}
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -60,7 +59,6 @@ const Hero = () => {
                     <h1 className='text-4xl md:text-6xl font-bold text-white mb-4'>
                         Hi, I'm{' '}
                         <motion.span
-                            // FIXED: Ensured no duplicate display keys here
                             style={{ display: "inline-flex" }} 
                             variants={container}
                             initial="hidden"
@@ -72,7 +70,7 @@ const Hero = () => {
                                     {letter === " " ? "\u00A0" : letter}
                                 </motion.span>
                             ))}
-                            {/* The Blinking Cursor */}
+                            
                             <motion.span
                                 animate={{ opacity: [0, 1, 0] }}
                                 transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
@@ -81,12 +79,11 @@ const Hero = () => {
                         </motion.span>
                     </h1>
                     <p className='text-base md:text-lg text-gray-300 mb-8 leading-relaxed max-w-md mx-auto md:mx-0'>
-                        Passionate Frontend Engineer specializing in React and Tailwind CSS.
+                        Passionate Frontend Engineer specializing in React, Typescript and Tailwind CSS.
                         I build responsive, user-centric web applications with a focus on seamless interactivity.
                     </p>
 
-                    {/* CTA Button */}
-                    <div className='flex justify-center md:justify-start'>
+                    {/* <div className='flex justify-center md:justify-start'>
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
@@ -94,7 +91,7 @@ const Hero = () => {
                         >
                             VIEW PROJECTS
                         </motion.button>
-                    </div>
+                    </div> */}
 
                     {/* Social Icons */}
                     <div className='flex items-center justify-center md:justify-start gap-6 mt-8'>

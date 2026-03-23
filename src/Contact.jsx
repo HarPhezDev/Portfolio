@@ -13,7 +13,7 @@ const Contact = () => {
         className="bg-white/5 border border-white/10 p-8 md:p-16 rounded-3xl text-center"
       >
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-          Let’s Build <span className="text-blue-500">Together</span>
+          Let's Build <span className="text-blue-500">Together</span>
         </h2>
         
         <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
@@ -32,14 +32,13 @@ const Contact = () => {
           <a 
             href="/path-to-your-cv.pdf" 
             target="_blank"
-            rel="noopener noreferrer" // Added for security on external links
+            rel="noopener noreferrer"
             className="flex items-center gap-2 border border-white/20 hover:bg-white/10 text-white px-8 py-4 rounded-full font-bold transition-all"
           >
             Download CV
           </a>
         </div>
 
-        {/* Social Links Footer */}
         <div className="mt-16 pt-8 border-t border-white/5 flex justify-center gap-8 text-gray-400">
            <a 
             href="https://github.com/harphezdev" 
@@ -61,7 +60,7 @@ const Contact = () => {
       </motion.div>
       
       <footer className="mt-12 text-center text-gray-600 text-sm">
-        © 2026 OLOLADE. All rights reserved.
+        © 2026 LOLADE_TECH All rights reserved.
       </footer>
     </section>
   );

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import Project1 from './img/project-1.jpg';
 import Project2 from './img/project-2.jpg';
+import Project3 from './img/Project-3.jpg';
 
 
 const Project = () => {
@@ -27,41 +28,14 @@ const Project = () => {
         },
          {
             id: 3,
-            title: "AI Chat Interface",
-            desc: "Custom GPT-4 implementation with markdown support.",
-            image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop",
-            tags: ["Next.js", "OpenAI", "TypeScript"],
-            github: "https://github.com/yourusername/project3",
-            live: "https://project3-demo.com"
+            title: "Crypto Dash",
+            desc: "Crypto Dash is a modern, interactive cryptocurrency dashboard built with React and TypeScript (TSX), providing real-time market insights and analytics using the CoinGecko Live API. The platform combines strong type safety with dynamic UI components for a smooth and responsive user experience.",
+            image: Project3,
+            tags: ["React", "TypeScript", "API", "TailwindCss", "Framer Motion",],
+            github: "https://github.com/HarPhezDev/CryptoDash",
+            live: "#"
         },
-        {
-            id: 4,
-            title: "Social Dashboard",
-            desc: "Real-time data visualization using Chart.js and Tailwind.",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
-            tags: ["Tailwind", "Chart.js", "Firebase"],
-            github: "https://github.com/yourusername/project2",
-            live: "https://project2-demo.com"
-        },
-        {
-            id: 5,
-            title: "E-Commerce App",
-            desc: "A full-stack store with React and Stripe integration.",
-            image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop",
-            tags: ["React", "Tailwind"],
-            github: "https://github.com/yourusername/project1",
-            live: "https://project1-demo.com"
-        },
-        {
-
-            id: 6,
-            title: "AI Chat Interface",
-            desc: "Custom GPT-4 implementation with markdown support.",
-            image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop",
-            tags: ["Next.js", "OpenAI", "TypeScript"],
-            github: "https://github.com/yourusername/project3",
-            live: "https://project3-demo.com"
-        },
+       
     ];
 
     return (
@@ -101,7 +75,6 @@ const Project = () => {
                             <div className='p-6 flex flex-col flex-grow'>
                                 <div className='flex flex-wrap gap-2 mb-4'>
                                     {proj.tags.map((tag, i) => (
-                                        // FIXED: Added unique keys for tags
                                         <span key={`${proj.id}-${tag}-${i}`} className='text-[10px] uppercase tracking-widest bg-blue-500/10 text-blue-400 px-2 py-1 rounded-md border border-blue-500/20'>
                                             {tag}
                                         </span>

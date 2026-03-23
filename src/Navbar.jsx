@@ -5,7 +5,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false)
 
     return (
-        // Added 'relative' and adjusted width/margins for mobile
+        
         <nav className="navbar-hero-bg bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg rounded-2xl text-white h-auto md:h-20 w-[92%] md:w-full max-w-7xl px-5 mx-auto mt-6 md:mt-10 transition-all duration-500">
 
             <div className='flex justify-between items-center h-20'>
@@ -24,12 +24,12 @@ const Navbar = () => {
                     <li className='hover:text-blue-600 transition-colors duration-300 cursor-pointer'><a href="#contact">Contact</a></li>
                 </ul>
 
-                {/* Button (Desktop) */}
+                {/* Button */}
                 <div className='hidden md:flex bg-blue-700 h-11 px-5 rounded-2xl items-center justify-center transition-all duration-300 hover:scale-105 hover:bg-blue-800'>
                     <h1 className='text-white text-xl cursor-pointer'>HIRE ME</h1>
                 </div>
 
-                {/* Hamburger (Mobile Only) */}
+                {/* Hamburger*/}
                 <div
                     className='md:hidden cursor-pointer text-2xl transition-transform duration-300 hover:rotate-90'
                     onClick={() => setOpen(!open)}
@@ -38,7 +38,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Mobile Menu - Fixed the background and spacing */}
+            {/* Mobile Menu */}
             <div className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${open ? 'max-h-96 opacity-100 mb-4' : 'max-h-0 opacity-0'}`}>
                 <div className='flex flex-col gap-4 pb-4 px-2 border-t border-white/10 pt-4'>
                     <a href="/" className='hover:text-blue-600 transition-colors duration-300' onClick={() => setOpen(false)}>Home</a>

@@ -14,8 +14,6 @@ import Contact from './Contact.jsx'
 
 
 
-
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
    <div className="relative min-h-screen text-white">
