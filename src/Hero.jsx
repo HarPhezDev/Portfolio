@@ -59,7 +59,7 @@ const Hero = () => {
                     <h1 className='text-4xl md:text-6xl font-bold text-white mb-4'>
                         Hi, I'm{' '}
                         <motion.span
-                            style={{ display: "inline-flex" }} 
+                            style={{ display: "inline-flex" }}
                             variants={container}
                             initial="hidden"
                             animate="visible"
@@ -70,7 +70,7 @@ const Hero = () => {
                                     {letter === " " ? "\u00A0" : letter}
                                 </motion.span>
                             ))}
-                            
+
                             <motion.span
                                 animate={{ opacity: [0, 1, 0] }}
                                 transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
@@ -83,15 +83,19 @@ const Hero = () => {
                         I build responsive, user-centric web applications with a focus on seamless interactivity.
                     </p>
 
-                    {/* <div className='flex justify-center md:justify-start'>
+                    <div className='flex justify-center md:justify-start'>
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className='bg-blue-700 hover:bg-blue-600 text-white font-bold text-lg h-12 w-44 rounded-2xl transition-colors shadow-lg'
+                            onClick={() => {
+                                const projectsSection = document.getElementById("projects");
+                                projectsSection?.scrollIntoView({ behavior: "smooth" });
+                            }}
                         >
                             VIEW PROJECTS
                         </motion.button>
-                    </div> */}
+                    </div>
 
                     {/* Social Icons */}
                     <div className='flex items-center justify-center md:justify-start gap-6 mt-8'>
@@ -127,7 +131,7 @@ const Hero = () => {
                         >
                             <FaXTwitter />
                         </motion.a>
-                        
+
                         <motion.a
                             href="https://wa.me/2348085939242"
                             target="_blank"

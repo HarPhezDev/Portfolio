@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import Project1 from './img/project-1.jpg';
 import Project2 from './img/project-2.jpg';
-import Project3 from './img/Project-3.jpg';
+import Project3 from './img/project-3.jpg';
 
 
 const Project = () => {
@@ -11,22 +11,23 @@ const Project = () => {
         {
             id: 1,
             title: "E-Commerce Web",
-            desc: "A full-stack store with React and Stripe integration.",
+            desc: "ShopEasy E-Commerce is a full-stack online store built with React and Tailwind CSS, featuring a dynamic shopping experience. Users can browse products, add items to a shopping cart, and explore a visually appealing interface.",
             image: Project1,
-            tags: ["React", "Tailwind"],
+            tags: ["React", "Tailwind", "Framer Motion"],
             github: "https://github.com/HarPhezDev/ShopEasy",
             live: "https://shopeasy3.netlify.app/"
         },
         {
             id: 2,
             title: "Easy Currency Converter",
-            desc: "A modern currency conversion app with real-time exchange rates, interactive Real API, and a responsive design powered by React and Tailwind CSS.",
+            desc: "Easy Currency Converter is a modern web application that allows users to quickly and accurately convert currencies using live exchange rates from a reliable API. Built with React and Tailwind CSS, the app features a fully responsive design and smooth animations with Framer Motion, providing an intuitive and engaging user experience across all devices. Users can select currencies, view conversion results instantly, and enjoy a visually appealing interface designed for clarity and ease of use.",
             image: Project2,
             tags: ["React", "Tailwind", "API", "Framer Motion"],
             github: "https://github.com/HarPhezDev/Easy-Currency-Converter",
             live: "https://easycurrencyconverter0.netlify.app/"
         },
-         {
+
+        {
             id: 3,
             title: "Crypto Dash",
             desc: "Crypto Dash is a modern, interactive cryptocurrency dashboard built with React and TypeScript (TSX), providing real-time market insights and analytics using the CoinGecko Live API. The platform combines strong type safety with dynamic UI components for a smooth and responsive user experience.",
@@ -35,7 +36,7 @@ const Project = () => {
             github: "https://github.com/HarPhezDev/CryptoDash",
             live: "#"
         },
-       
+
     ];
 
     return (

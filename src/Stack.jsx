@@ -7,7 +7,6 @@ import {
   SiFramer,
   SiJavascript,
   SiTypescript,
-  SiNodedotjs,
   SiGit
 
 } from 'react-icons/si';

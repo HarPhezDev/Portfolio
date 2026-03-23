@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiLayout, FiCode, FiSmartphone, FiLayers } from 'react-icons/fi';
+import { FiLayout, FiCode, FiSmartphone, FiLink, FiUserCheck, FiRefreshCcw, FiMonitor, FiLayers } from 'react-icons/fi';
 
 const Services = () => {
     const services = [
@@ -23,18 +23,17 @@ const Services = () => {
             title: "Testing",
             desc: "Conducting thorough testing of websites to ensure functionality, performance, and user experience are flawless across browsers and devices.",
             icon: <FiMonitor className="text-blue-500" size={28} />,
-        }, {
+        },
+        {
             title: "API Integration",
             desc: "Connecting websites and applications to external APIs for real-time data, services, and seamless functionality.",
             icon: <FiLink className="text-blue-500" size={28} />,
         },
-
         {
             title: "Maintenance & Updates",
             desc: "Regularly updating websites, fixing bugs, and ensuring optimal performance and security over time.",
             icon: <FiRefreshCcw className="text-blue-500" size={28} />,
         },
-
         {
             title: "Accessibility",
             desc: "Ensuring websites are usable by everyone, including people with disabilities, following best practices and standards.",
