@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import image from './img/logo.png' 
+import image from './img/logo.png'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
 
     return (
-        
+
         <nav className="navbar-hero-bg bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg rounded-2xl text-white h-auto md:h-20 w-[92%] md:w-full max-w-7xl px-5 mx-auto mt-6 md:mt-10 transition-all duration-500">
 
             <div className='flex justify-between items-center h-20'>
@@ -46,10 +46,11 @@ const Navbar = () => {
                     <a href="#stack" className='hover:text-blue-600 transition-colors duration-300' onClick={() => setOpen(false)}>Stack</a>
                     <a href="#projects" className='hover:text-blue-600 transition-colors duration-300' onClick={() => setOpen(false)}>Projects</a>
                     <a href="#contact" className='hover:text-blue-600 transition-colors duration-300' onClick={() => setOpen(false)}>Contact</a>
-
-                    <div className='bg-blue-700 h-11 rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-105 hover:bg-blue-800'>
-                        <h1 className='text-white text-xl cursor-pointer'>HIRE ME</h1>
-                    </div>
+                    <a href="#contact">
+                        <div className="bg-blue-700 h-11 rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-105 hover:bg-blue-800">
+                            <h1 className="text-white text-xl cursor-pointer">HIRE ME</h1>
+                        </div>
+                    </a>
                 </div>
             </div>
 
