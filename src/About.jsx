@@ -58,13 +58,10 @@ const About = () => {
                                 <span className="text-blue-500">▹</span> Performance Optimization
                             </li>
                             <li className="flex items-center gap-2">
-                                <span className="text-blue-500">▹</span> Testing
+                                <span className="text-blue-500">▹</span> Testing & Maintenance
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-blue-500">▹</span> APIs
-                            </li>
-                             <li className="flex items-center gap-2">
-                                <span className="text-blue-500">▹</span> Maintenance
                             </li>
                         </ul>
                     </motion.div>
