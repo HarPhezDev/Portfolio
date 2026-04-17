@@ -1,12 +1,44 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FiExternalLink, FiGithub } from 'react-icons/fi'
+import { FiExternalLink, FiGithub, FiServer, FiTag } from 'react-icons/fi'
+import { SiReact, SiTailwindcss, SiFramer, SiTypescript, SiFirebase } from 'react-icons/si'
 import Project1 from './img/project-1.jpg';
 import Project2 from './img/project-2.jpg';
 import Project3 from './img/project-3.jpg';
 
 
 const Project = () => {
+    const tagMeta = {
+        React: {
+            icon: <SiReact className="text-sky-400" size={14} />,
+            style: 'bg-sky-500/10 text-sky-300 border-sky-500/20',
+        },
+        Tailwind: {
+            icon: <SiTailwindcss className="text-cyan-400" size={14} />,
+            style: 'bg-cyan-500/10 text-cyan-300 border-cyan-500/20',
+        },
+        'TailwindCss': {
+            icon: <SiTailwindcss className="text-cyan-400" size={14} />,
+            style: 'bg-cyan-500/10 text-cyan-300 border-cyan-500/20',
+        },
+        'Framer Motion': {
+            icon: <SiFramer className="text-violet-400" size={14} />,
+            style: 'bg-violet-500/10 text-violet-300 border-violet-500/20',
+        },
+        API: {
+            icon: <FiServer className="text-emerald-400" size={14} />,
+            style: 'bg-emerald-500/10 text-emerald-300 border-emerald-500/20',
+        },
+        TypeScript: {
+            icon: <SiTypescript className="text-sky-500" size={14} />,
+            style: 'bg-sky-500/10 text-sky-300 border-sky-500/20',
+        },
+        Firebase: {
+            icon: <SiFirebase className="text-amber-400" size={14} />,
+            style: 'bg-amber-500/10 text-amber-300 border-amber-500/20',
+        },
+    };
+
     const projects = [
         {
             id: 1,
@@ -32,9 +64,9 @@ const Project = () => {
             title: "Crypto Dash",
             desc: "Crypto Dash is a modern, interactive cryptocurrency dashboard built with React and TypeScript (TSX), providing real-time market insights and analytics using the CoinGecko Live API. The platform combines strong type safety with dynamic UI components for a smooth and responsive user experience.",
             image: Project3,
-            tags: ["TypeScript", "API", "TailwindCss",],
+            tags: ["TypeScript", "API", "TailwindCss", "Firebase", ],
             github: "https://github.com/HarPhezDev/CryptoDash",
-            live: "#"
+            live: "https://cryptodash5.netlify.app/"
         },
 
     ];
@@ -75,11 +107,22 @@ const Project = () => {
 
                             <div className='p-6 flex flex-col flex-grow'>
                                 <div className='flex flex-wrap gap-2 mb-4'>
-                                    {proj.tags.map((tag, i) => (
-                                        <span key={`${proj.id}-${tag}-${i}`} className='text-[10px] uppercase tracking-widest bg-blue-500/10 text-blue-400 px-2 py-1 rounded-md border border-blue-500/20'>
-                                            {tag}
-                                        </span>
-                                    ))}
+                                    {proj.tags.map((tag, i) => {
+                                        const meta = tagMeta[tag] || {
+                                            icon: <FiTag className="text-gray-400" size={14} />,
+                                            style: 'bg-white/5 text-gray-300 border-white/10',
+                                        };
+
+                                        return (
+                                            <span
+                                                key={`${proj.id}-${tag}-${i}`}
+                                                className={`flex items-center gap-1 text-[10px] uppercase tracking-widest px-2 py-1 rounded-md border ${meta.style}`}
+                                            >
+                                                {meta.icon}
+                                                {tag}
+                                            </span>
+                                        )
+                                    })}
                                 </div>
 
                                 <h3 className="text-white font-bold text-2xl mb-2 group-hover:text-blue-500 transition-colors">

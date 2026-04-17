@@ -25,9 +25,9 @@ const Navbar = () => {
                 </ul>
 
                 {/* Button */}
-                <div className='hidden md:flex bg-blue-700 h-11 px-5 rounded-2xl items-center justify-center transition-all duration-300 hover:scale-105 hover:bg-blue-800'>
+                <a href="mailto:olundegunhafeez@gmail.com" className='hidden md:flex bg-blue-700 h-11 px-5 rounded-2xl items-center justify-center transition-all duration-300 hover:scale-105 hover:bg-blue-800'>
                     <h1 className='text-white text-xl cursor-pointer'>HIRE ME</h1>
-                </div>
+                </a>
 
                 {/* Hamburger*/}
                 <div
@@ -46,7 +46,7 @@ const Navbar = () => {
                     <a href="#stack" className='hover:text-blue-600 transition-colors duration-300' onClick={() => setOpen(false)}>Stack</a>
                     <a href="#projects" className='hover:text-blue-600 transition-colors duration-300' onClick={() => setOpen(false)}>Projects</a>
                     <a href="#contact" className='hover:text-blue-600 transition-colors duration-300' onClick={() => setOpen(false)}>Contact</a>
-                    <a href="#contact">
+                    <a href="mailto:olundegunhafeez@gmail.com">
                         <div className="bg-blue-700 h-11 rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-105 hover:bg-blue-800">
                             <h1 className="text-white text-xl cursor-pointer">HIRE ME</h1>
                         </div>
