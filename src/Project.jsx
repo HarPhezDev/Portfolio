@@ -62,7 +62,7 @@ const Project = () => {
         {
             id: 3,
             title: "Crypto Dash",
-            desc: "Crypto Dash is a modern, interactive cryptocurrency dashboard built with React and TypeScript (TSX), providing real-time market insights and analytics using the CoinGecko Live API. The platform combines strong type safety with dynamic UI components for a smooth and responsive user experience.",
+            desc: "Crypto Dash is a modern, interactive cryptocurrency dashboard built with React and TypeScript (TSX), providing real-time market insights and analytics using the CoinGecko Live API. It now includes Firebase Authentication for secure user login, personal watchlists, saved favorites, and protected profile data. The platform combines strong type safety with dynamic UI components for a smooth, responsive, and user-centered trading experience.",
             image: Project3,
             tags: ["TypeScript", "API", "TailwindCss", "Firebase", ],
             github: "https://github.com/HarPhezDev/CryptoDash",
