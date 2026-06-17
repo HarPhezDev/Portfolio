@@ -1,5 +1,5 @@
 import React from 'react'
-import Profile from './img/Profile.png'
+import Profile from './img/my_profile.png'
 import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaXTwitter, FaWhatsapp } from 'react-icons/fa6'
 
@@ -79,7 +79,7 @@ const Hero = () => {
                         </motion.span>
                     </h1>
                     <p className='text-base md:text-lg text-gray-300 mb-8 leading-relaxed max-w-md mx-auto md:mx-0'>
-                        Passionate Frontend Engineer specializing in React, Typescript and Tailwind CSS.
+                        Passionate Frontend Engineer specializing in React, Typescript and Tailwind CSS, with 3+ years of experience.
                         I build responsive, user-centric web applications with a focus on seamless interactivity.
                     </p>
 
@@ -87,7 +87,7 @@ const Hero = () => {
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className='bg-blue-700 hover:bg-blue-600 text-white font-bold text-lg h-12 w-44 rounded-2xl transition-colors shadow-lg'
+                            className='bg-blue-700 hover:bg-blue-600 text-white font-bold text-lg h-12 w-44 rounded-xl transition-colors shadow-lg'
                             onClick={() => {
                                 const projectsSection = document.getElementById("projects");
                                 projectsSection?.scrollIntoView({ behavior: "smooth" });

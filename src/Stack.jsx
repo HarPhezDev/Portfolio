@@ -7,6 +7,7 @@ import {
   SiFramer,
   SiJavascript,
   SiTypescript,
+  SiNodedotjs,
   SiBootstrap,
   SiGit
 } from 'react-icons/si';
@@ -18,8 +19,9 @@ const Stack = () => {
     { id: 3, name: "Framer Motion", icon: <SiFramer className="text-white" /> },
     { id: 4, name: "JavaScript", icon: <SiJavascript className="text-[#F7DF1E]" /> },
     { id: 5, name: "TypeScript", icon: <SiTypescript className="text-[#3178C6]" /> },
-    { id: 6, name: "Bootstrap", icon: <SiBootstrap className="text-[#7952B3]" /> },
-    { id: 7, name: "Git", icon: <SiGit className="text-[#F05032]" /> },
+    { id: 6, name: "Node.js", icon: <SiNodedotjs className="text-[#339933]" /> },
+    { id: 7, name: "Bootstrap", icon: <SiBootstrap className="text-[#7952B3]" /> },
+    { id: 8, name: "Git", icon: <SiGit className="text-[#F05032]" /> },
   ];
 
   return (
@@ -75,5 +77,6 @@ const Stack = () => {
     </section>
   );
 };
+
 
 export default Stack;
