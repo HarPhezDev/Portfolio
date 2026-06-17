@@ -27,7 +27,7 @@ const About = () => {
                         className="w-full md:w-3/5"
                     >
                         <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                            I am a Frontend Engineer based in Nigeria, driven by the challenge of creating digital experiences that solve real-world human problems, with 3+ years of experience.
+                            I am a Frontend Engineer based  Lagos, Nigeria, driven by the challenge of creating digital experiences that solve real-world human problems, with 3+ years of experience.
                             I focus on building tools that are both functionally robust and aesthetically pleasing. What started as a curiosity about how the web works has
                             evolved into a career dedicated to building high-performance,
                             user-centric applications
@@ -64,6 +64,18 @@ const About = () => {
                                 <span className="text-blue-500">▹</span> APIs
                             </li>
                         </ul>
+
+                        <div className="mt-8 pt-6 border-t border-white/10">
+                            <h3 className="text-blue-500 font-bold mb-4">OPEN TO</h3>
+                            <div className="flex flex-wrap gap-3">
+                                <span className="px-4 py-2 bg-green-500/15 text-green-300 rounded-full text-sm font-semibold">Remote</span>
+                                <span className="px-4 py-2 bg-blue-500/15 text-blue-300 rounded-full text-sm font-semibold">Hybrid</span>
+                                <span className="px-4 py-2 bg-violet-500/15 text-violet-300 rounded-full text-sm font-semibold">Physical</span>
+                            </div>
+                            <p className="text-gray-400 text-sm mt-4">
+                                Available for remote, hybrid, and onsite roles. Let’s connect if you need flexible support across digital product teams.
+                            </p>
+                        </div>
                     </motion.div>
 
                 </div>
