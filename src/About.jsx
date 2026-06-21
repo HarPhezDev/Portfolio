@@ -27,7 +27,7 @@ const About = () => {
                         className="w-full md:w-3/5"
                     >
                         <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                            I am a Frontend Engineer based  Lagos, Nigeria, driven by the challenge of creating digital experiences that solve real-world human problems, with 3+ years of experience.
+                            I am a Frontend Engineer based  Lagos, Nigeria (WAT, GMT+1), driven by the challenge of creating digital experiences that solve real-world human problems, with 3+ years of experience.
                             I focus on building tools that are both functionally robust and aesthetically pleasing. What started as a curiosity about how the web works has
                             evolved into a career dedicated to building high-performance,
                             user-centric applications
